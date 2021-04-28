@@ -1,0 +1,20 @@
+Nothing to build in platform 'bram_control'
+
+19:44:29 **** Incremental Build of configuration Debug for project bram_control_C ****
+make all 
+'Building file: ../src/bram_control.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/bram_control.o" -ID:/0FPGA_SOFTWARE/BRAM/bram_control/export/bram_control/sw/bram_control/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bram_control.d" -MT"src/bram_control.o" -o "src/bram_control.o" "../src/bram_control.c"
+'Finished building: ../src/bram_control.c'
+' '
+'Building target: bram_control_C.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/0FPGA_SOFTWARE/BRAM/bram_control/export/bram_control/sw/bram_control/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "bram_control_C.elf"  ./src/bram_control.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: bram_control_C.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size bram_control_C.elf  |tee "bram_control_C.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   6308	    316	   3112	   9736	   2608	bram_control_C.elf
+'Finished building: bram_control_C.elf.size'
+' '

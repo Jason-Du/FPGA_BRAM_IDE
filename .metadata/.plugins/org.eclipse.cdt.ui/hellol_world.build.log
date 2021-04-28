@@ -1,0 +1,26 @@
+17:52:32 **** Build of configuration Debug for project hellol_world ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -ID:/0FPGA_SOFTWARE/BRAM/bram_control/export/bram_control/sw/bram_control/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -ID:/0FPGA_SOFTWARE/BRAM/bram_control/export/bram_control/sw/bram_control/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hellol_world.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LD:/0FPGA_SOFTWARE/BRAM/bram_control/export/bram_control/sw/bram_control/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "hellol_world.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hellol_world.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size hellol_world.elf  |tee "hellol_world.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   3260	    316	   3112	   6688	   1a20	hellol_world.elf
+'Finished building: hellol_world.elf.size'
+' '
+
+17:52:33 Build Finished (took 812ms)
+

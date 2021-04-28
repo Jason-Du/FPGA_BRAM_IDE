@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="hellol_world" location="D:/0FPGA_SOFTWARE/BRAM/hellol_world" platform="D:/0FPGA_SOFTWARE/BRAM/bram_control/export/bram_control/bram_control.xpfm" platformUID="xilinx:vc707::0.0(custom)" systemProject="hellol_world_system" sysConfig="bram_control" runtime="C/C++" cpu="standalone_domain" cpuInstance="microblaze_0" os="standalone" mssSignature="7fef065e099f415459b5b5816940c551">
+  <configuration name="Debug" id="xilinx.gnu.mb.exe.debug.2002388154" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.mb.exe.release.472854513" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
